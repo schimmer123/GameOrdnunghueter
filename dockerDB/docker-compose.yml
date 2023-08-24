@@ -1,8 +1,10 @@
 services:
   list-db:
     image: mysql:latest
+    volumes:
+      - my-db-volume:/var/lib/mysql
     container_name: listsdb
-    restart: "no"
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: listdb
@@ -10,3 +12,5 @@ services:
       MYSQL_PASSWORD: password
     ports:
       - 3306:3306
+volumes:
+  my-db-volume:
