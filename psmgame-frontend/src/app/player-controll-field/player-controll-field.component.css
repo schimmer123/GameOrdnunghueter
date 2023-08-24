@@ -1,0 +1,39 @@
+.controll-field-container {
+    width: fit-content;
+}
+
+
+.element-field-grid-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  align-items: center;
+
+}
+
+
+
+.icon-cog {
+  color: #DA4E00;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.buttons{
+  padding: 5px;
+  background-color: #DA4E00;
+  font-size: 15px;
+  color: white;
+}
+
+
+.menue-container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+
+}

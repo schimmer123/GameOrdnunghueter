@@ -1,0 +1,45 @@
+<div class="controll-field-container">
+  <div class="element-field-grid-list">
+
+    <app-player-element class="player-element"
+                        *ngFor="let player of players"
+                        [player]="player"
+    ></app-player-element>
+    <fa-icon class="icon-cog" [icon]="faCirclePlus" size="4x"
+             (click)="addPlayer()"
+             *ngIf="players.length < 4 && gameStarted == false"></fa-icon>
+
+  </div>
+
+  <div class="menue-container">
+    <button mat-raised-button class="buttons"
+            (click)="startGameButoon()"
+            [disabled]="gameStarted ||  startGameButton"
+    >Spiel starten
+    </button>
+
+    <button class="buttons" mat-button [matMenuTriggerFor]="menu" [disabled]="gameStarted">
+      {{dropdown_listPlaceholder}}
+      <fa-icon [icon]="faChevronDown" size="xl"></fa-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item
+              *ngFor="let list of lists"
+              (click)="onListClick(list)"
+      >{{list.name}}</button>
+
+    </mat-menu>
+    <button mat-raised-button class="buttons"
+            (click)="openAddListWindow()"
+            [disabled]=""
+    >Liste Hinzufügen
+    </button>
+
+    <button mat-raised-button class="buttons"
+            (click)="restartGame()"
+            [disabled]=""
+    >Spiel Neustarten
+    </button>
+
+  </div>
+</div>

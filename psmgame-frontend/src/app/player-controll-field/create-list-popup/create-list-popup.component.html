@@ -1,0 +1,31 @@
+<div class="create-List-Form">
+  <mat-form-field>
+    <mat-label >Name der Liste:</mat-label>
+    <input matInput [(ngModel)]="name">
+  </mat-form-field>
+  <p>Bitte die Liste absteigend füllen, von viel nach wenig.</p>
+  <mat-form-field class="example-chip-list" appearance="fill">
+    <mat-label>Listen Elemente (max. 10 Stück):</mat-label>
+    <mat-chip-list #chipList aria-label="Fruit selection" class="mat-chip-list-stacked">
+      <mat-chip *ngFor="let listElement of listElements" (removed)="remove(listElement)" class="test">
+        {{listElement.text}}
+        <button matChipRemove>
+          <mat-icon>cancel</mat-icon>
+        </button>
+      </mat-chip>
+      <input placeholder="Next list element..."
+             [matChipInputFor]="chipList"
+             [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+             [matChipInputAddOnBlur]="addOnBlur"
+             (matChipInputTokenEnd)="add($event)"
+             [disabled]="listFull">
+    </mat-chip-list>
+  </mat-form-field>
+
+  <button mat-raised-button class="buttons"
+          (click)="createNewLst()"
+  >Neue Liste erstellen
+  </button>
+
+
+</div>

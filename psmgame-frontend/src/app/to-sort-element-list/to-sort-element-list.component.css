@@ -1,0 +1,51 @@
+.element-field-grid-list {
+}
+
+.element-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF7F37;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+
+
+
+
+.headline-container {
+  text-align: center;
+  background-color: #DA4E00;
+  border-radius: 5px;
+  margin: 10px;
+
+}
+.much-few-container {
+  width: 100px;
+  text-align: center;
+  background-color: #DA4E00;
+  border-radius: 25px;
+  margin: 10px;
+
+
+
+}
+.much-few-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+
+
+

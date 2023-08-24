@@ -1,0 +1,17 @@
+<div class="unsorted-elements-content">
+  <div class="element-field-grid-list"
+                   cdkDropList
+                   [cdkDropListData]="sortElements"
+                    >
+      <div
+        *ngFor="let element of sortElements"
+        class="element-field"
+        [cdkDragDisabled]="gameStarted == false"
+        cdkDrag>
+        {{element.text}}
+      </div>
+    </div>
+</div>
+
+
+

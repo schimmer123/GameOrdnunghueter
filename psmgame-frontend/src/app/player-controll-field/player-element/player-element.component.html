@@ -1,0 +1,13 @@
+<div class="content" [ngClass]="{players_turn: player.playersTurn == true, player_lost: player.playerLost == true}">
+  <p>{{player.name}}</p>
+  <div class="icons-container">
+    <fa-icon class="icon-cog" [icon]="faCircleXmark" size="4x"
+             [ngClass]="{mistake_circle: player.mistakes == 1 || player.mistakes == 2 || player.mistakes == 3}"></fa-icon>
+    <fa-icon class="icon-cog" [icon]="faCircleXmark" size="4x"
+             [ngClass]="{mistake_circle:  player.mistakes == 2 || player.mistakes == 3}"></fa-icon>
+    <fa-icon class="icon-cog" [icon]="faCircleXmark" size="4x"
+             [ngClass]="{mistake_circle:  player.mistakes == 3}"></fa-icon>
+  </div>
+</div>
+
+

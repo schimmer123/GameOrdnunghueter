@@ -1,0 +1,13 @@
+.create-List-Form{
+  display: flex;
+  flex-direction: column;
+}
+.mat-chip {
+  width: auto !important;
+}
+
+input.mat-chip-input {
+  width: 150px !important;
+  margin: 4px !important;
+  flex: 1 0 35px !important;
+}

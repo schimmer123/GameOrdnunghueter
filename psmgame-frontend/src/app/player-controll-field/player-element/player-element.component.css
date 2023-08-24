@@ -1,0 +1,40 @@
+.content {
+  background-color: #FF7F37;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  width: fit-content;
+
+}
+
+.players_turn {
+  background-color: #259023;
+}
+
+.player_lost {
+  background-color: grey;
+}
+
+.icon-cog {
+  color: #DA4E00;
+
+}
+
+.mistake_circle {
+  color: #FC4F4F;
+}
+
+p {
+  margin: 0;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-left: 5px;
+}

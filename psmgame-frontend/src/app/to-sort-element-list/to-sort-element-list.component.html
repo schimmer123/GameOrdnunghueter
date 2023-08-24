@@ -1,0 +1,39 @@
+<div class="toSort-elements-content">
+
+  <div class="headline-container">
+    <h1>{{headline}}</h1>
+  </div>
+
+  <div class="much-few-content">
+    <div class="much-few-container">
+      <h3>Viel/Neu</h3>
+    </div>
+  </div>
+
+  <div class="element-field-grid-list"
+       cdkDropList
+       [cdkDropListData]="sortElements"
+       (cdkDropListDropped)="onDrop($event)"
+  >
+      <div
+        *ngFor="let element of sortElements"
+        class="element-field"
+        cdkDrag
+        cdkDragDisabled="true"
+        >
+        <p>{{element.text}}</p>
+      </div>
+  </div>
+
+
+
+  <div class="much-few-content">
+    <div class="much-few-container">
+      <h3>Weniger/Alt</h3>
+    </div>
+  </div>
+
+
+</div>
+
+

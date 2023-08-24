@@ -1,0 +1,16 @@
+.content {
+  display: flex;
+  color: white;
+}
+.content-sort-element-list {
+  width: 20%;
+  margin-left: 5%;
+}
+.playerField-unsortedElement-content {
+  width: 70%;
+  margin-left: 2%;
+}
+.player-control-field {
+  width: fit-content;
+}
+
