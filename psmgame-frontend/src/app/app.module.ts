@@ -24,7 +24,6 @@ import {FormsModule} from "@angular/forms";
 import {MatChipsModule} from "@angular/material/chips";
 import { GameoverPopupComponent } from './gameover-popup/gameover-popup.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
